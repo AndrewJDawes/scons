@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+source env.sh
+REGISTRY_HOST_AND_PORT="${PROJECT_DOCKER_REGISTRY_HOST:+$PROJECT_DOCKER_REGISTRY_HOST}${PROJECT_DOCKER_REGISTRY_PORT:+:$PROJECT_DOCKER_REGISTRY_PORT}"
+if [ -f ".env.sh" ]; then
+    source .env.sh;
+fi
